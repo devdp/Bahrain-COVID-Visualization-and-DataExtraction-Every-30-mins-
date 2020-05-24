@@ -1,0 +1,115 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Bahrain COVID Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.19.0/apexcharts.min.js" integrity="sha256-cre9IYMCEv8sI80be7MYT2DRSQqnGayjkSV8HhP3/tM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.19.0/apexcharts.min.css" integrity="sha256-RUxywoyKDxPwo7mk/9S7TvbhR+IpVsldMi53nTNGpWQ=" crossorigin="anonymous" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+      <div>
+          <nav class="navbar navbar-light bg-light" style="padding: 0px 2px;margin-bottom: 0px;">
+              <a class="navbar-brand" href="#">COVID-19 In Bahrain Cases Visualization</a>
+              <a class="ui green label" style="font-size: 115%;">Author : Mr. Bramhesh</a>
+          </nav>
+      </div>
+      <div class="wrapper d-flex align-items-stretch">
+          <nav id="sidebar" class="active">
+              <h1>
+                  <a href="#" class="logo">
+                      <img class="ui small circular image" src="https://media.glassdoor.com/sqll/381568/kingdom-of-bahrain-moh-squarelogo-1429789069919.png">
+                  </a>
+              </h1>
+              <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="http://localhost:5000/ref"><span class="fa fa-home"></span> Home</a>
+                </li>
+                <li>
+                    <a href="maps.html"><i class="map outline icon"></i> MAP</a>
+                </li>
+                <li>
+                    <a href="cnd.html">
+                        <i class="chart bar outline icon"></i>
+                        Cases and Deaths
+                    </a>
+                </li>
+                <li>
+                    <a href="ct.html">
+                        <i class="table icon inverted"></i>
+                        Contact Tracing
+                    </a>
+                </li>
+            </ul>
+
+              <div class="footer">
+                  <p>
+                      Copyright &copy;
+                      <script>document.write(new Date().getFullYear());</script> All rights reserved | Khalid
+                  </p>
+              </div>
+          </nav>
+
+          <!-- Page Content  -->
+          <div id="content" class="p-4 p-md-5">
+              <div>
+                  <h2 class="mb-4">Case and Death Timeline</h2>
+                  
+                          <div class='tableauPlaceholder' id='viz1589952069413' style='position: relative'>
+                          <noscript>
+                              <a href='#'>
+                              <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrendandInsightsCovidBahrain&#47;Dashboard3&#47;1_rss.png' style='border: none' />
+                                  </a>
+                              </noscript>
+                          <object class='tableauViz' style='display:none;'>
+                              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                              <param name='embed_code_version' value='3' /> 
+                              <param name='site_root' value='' />
+                              <param name='name' value='TrendandInsightsCovidBahrain&#47;Dashboard3' />
+                              <param name='tabs' value='no' />
+                              <param name='toolbar' value='yes' />
+                              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrendandInsightsCovidBahrain&#47;Dashboard3&#47;1.png' /> 
+                              <param name='animate_transition' value='yes' />
+                              <param name='display_static_image' value='yes' />
+                              <param name='display_spinner' value='yes' />
+                              <param name='display_overlay' value='yes' />
+                              <param name='display_count' value='yes' />
+                              <param name='filter' value='publish=yes' />
+                              </object>
+                          </div>
+                          <script type='text/javascript'>
+                              var divElement = document.getElementById('viz1589952069413');
+                              var vizElement = divElement.getElementsByTagName('object')[0];
+                              if (divElement.offsetWidth > 800) {
+                                  vizElement.style.width = '100%';
+                                  vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                              }
+                              else if (divElement.offsetWidth > 500) {
+                                  vizElement.style.width = '100%';
+                                  vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                              }
+                              else {
+                                  vizElement.style.width = '100%';
+                                  vizElement.style.height = '1077px';
+                              }
+                              var scriptElement = document.createElement('script');
+                              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                          </script>
+                      </div>
+                  </div>
+              </div>
+      
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
